@@ -1,0 +1,32 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	public static void main (String[] args) {
+                      // Your code here
+					  Scanner sc = new Scanner (System.in);
+					  String s1 = sc.nextLine();
+					  String s2 = sc.nextLine();
+					  String str1 = s1.substring(1, s1.length()-1);
+					  String str2 = s2.substring(1, s2.length()-1);
+					  int n = str1.length();
+					  int m = str2.length();
+					  int sum = n+m;
+
+					  if(sum % 6 == 0)
+					  System.out.print("Siblings");
+					  else if(sum % 6 == 1)
+					  System.out.print("Friends");
+					  else if(sum % 6 == 2)
+					  System.out.print("Love");
+					  else if(sum % 6 == 3)
+					  System.out.print("Affection");
+					  else if(sum % 6 == 4)
+					  System.out.print("Marriage");
+					  else
+					  System.out.print("Enemy");
+
+	}
+}
